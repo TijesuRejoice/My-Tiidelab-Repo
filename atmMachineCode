@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ATM Machine Sturv</title>
+<body>
+
+<script>
+
+// Display the ATM menu
+var availableBalance = 100000;
+var withdrawalAmount;
+var depositAmount;
+var transferAmount;
+
+// Display the ATM menu
+var selection = prompt(`Welcome to the ATM!
+1. Withdraw cash
+2. Deposit money
+3. Transfer money
+4. Check balance
+5. Exit
+`)
+
+// Get the user's selection
+// var selection = prompt("Please select an option: ");
+
+// Process the user's selection
+if (selection === "1") {
+  // Withdraw cash
+  withdrawalAmount = prompt("How much would you like to withdraw? ");
+  if (withdrawalAmount > availableBalance) {
+    alert("Insufficient funds.");
+  } else {
+    availableBalance -= withdrawalAmount;
+    alert("You have withdrawn $" + withdrawalAmount + ".");
+  }
+} else if (selection === "2") {
+  // Deposit money
+  depositAmount = prompt("How much would you like to deposit? ");
+  availableBalance += depositAmount;
+  alert("You have deposited $" + depositAmount + ".");
+} else if (selection === "3") {
+  // Transfer money
+  transferAmount = prompt("How much would you like to transfer? ");
+  if (transferAmount > availableBalance) {
+    alert("Insufficient funds.");
+  } else {
+    var accountNumber = prompt("Please enter the account number you would like to transfer to: ");
+    availableBalance -= transferAmount;
+    alert("You have transferred $" + transferAmount + " to account number " + accountNumber + ".");
+  }
+} else if (selection === "4") {
+  // Check balance
+  alert("Your available balance is $" + availableBalance + ".");
+} else if (selection === "5") {
+  // Exit
+  alert("Thank you for using the ATM!");
+} else {
+  // Invalid selection
+  alert("Please select a valid option.");
+}
+</script>
+</body>
+</html>
