@@ -46,7 +46,46 @@ if (quest1 == 1) {
         // how to return to main menu
      }
 
+} else if (quest1 == 2) {
+    let ownerPhone = prompt(`Please select network:
+    1. MTN
+    2. Glo
+    3. Airtel
+    4. Etisalat
+    5. WIFI Options
+    `)
+   let ownerAmount = prompt(`Please enter your phone number` )
+   let airtimeAmount = prompt(`Please enter amount`)
+   alert(`You have successfully purchased ${airtimeAmount} for yourself`)
+} else if (quest1 == 3) {
+    let othersNum = prompt(`Please select network:
+    1. MTN
+    2. Glo
+    3. Airtel
+    4. Etisalat
+    5. WIFI Options
+    `)
+   let othersPhone = prompt(`Please enter the phone number` )
+   let airtimeOthers = prompt(`Please enter amount`)
+   alert(`You have successfully purchased ${airtimeOthers} for ${othersPhone}`)
+} else if (quest1 == 4) {
+    // how to check account balance
+} else if (quest1 == 5) {
+    let typeofAccount = alert(`Thank you for opening an account with us! Please select account type:
+    1. Savings
+    2. Current
+    3. Fixed Deposit
+    `)
+    if (typeofAccount = 1) {
+        prompt(`Please enter the number provided for you at the bank`)
+    } else if (typeofAccount = 2) {
+        prompt(`Please provide latest utility bill number`)
+    } else if (typeofAccount = 3) {
+        alert(`Please contact your bank support`)
+    } 
+    alert(`Thank you for opening an account with us`)
 }
-    </script>
+
+</script>
 </body>
 </html>
