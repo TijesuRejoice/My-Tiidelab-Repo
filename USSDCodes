@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>USSD Codes Sturv</title>
+<body>
+    <script>
+        // Prompt user for action
+        let quest1 = prompt(`Welcome to EazyBanking.
+        1. Transfer
+        2. Airtime (self)
+        3. Airtime (others)
+        4. Check Balance
+        5. Open Account
+        6. Exit
+        `)
+// Transfer starts
+if (quest1 == 1) {
+    let transferOptions = prompt(`Select bank to transfer to:)
+    1. Access Bank
+    2. Bank of Nigeria
+    3. Continental Bank
+    4. Diamond Bank
+    5. Easy Bank
+    6. Back to main menu
+    `)
+
+    let lastValidSpot = ""; // Store the last valid account number
+
+     if (transferOptions == 1 || 2 || 3 || 4 || 5) {
+        let chooseBank = prompt(`Please enter account number:`)
+        if (chooseBank == 0 && chooseBank == "string") {
+            alert(`Account number must be filled correctly!`)
+        } else {
+            prompt(`Please enter your PIN`)
+        }
+       let cashAmount = prompt(`Please enter amount`)
+       if (cashAmount == '') {
+        alert(`Amount cannot be empty`)
+       } else if (typeof cashAmount === 'string') {
+        alert(`Amount should be in numbers!`)
+      // Perform withdrawal logic here
+    //    } else {
+        alert(`Transfer successful!`)
+       }
+     } else if (transferOptions == 6) {
+        // how to return to main menu
+     }
+
+}
+    </script>
+</body>
+</html>
