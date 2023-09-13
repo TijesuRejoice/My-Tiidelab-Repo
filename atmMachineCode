@@ -2,6 +2,12 @@
 <html>
 <head>
 <title>ATM Machine Sturv</title>
+<style>
+body {
+  background-color: sandybrown;
+  padding: 10px;
+  }
+  </style>
 <body>
 
 <script>
