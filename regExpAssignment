@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Reg. Exp. Sturv</title>
+</head>
+
+<body>
+    <script>
+        //     RegExp methods:
+        //     1. test()
+        //     2. matchAll()
+        //     3. replaceAll()
+        //     4. split()
+        //     5. exec()
+
+        
+        // using test() method 1 - checks if a string contains a pattern or not and returns true or false
+        const test1 = /and/ig;
+        const str1 = "Girls AND boys can be teachers. Books and biros. We write AnD we read aNd we dictate.";
+        const testRegExp = test1.test(str1);
+        console.log(testRegExp); // true
+
+        // using test() method 2
+        const test2 = /and/ig;
+        const str2 = "Girls bash boys can be teachers. Books bash biros. We write bash we read bash we dictate.";
+        const testRegExp2 = test2.test(str2);
+        console.log(testRegExp2); // false
+
+        // using matchAll() method - obtains an iterator of all matches of a pattern in a string.
+        const test3 = /and/ig;
+        const str3 = "Girls AND boys can be teachers. Books and biros. We write AnD we read aNd we dictate.";
+        const regMatch = [...str3.matchAll(test3)];
+        for (const match of regMatch) {
+        console.log(regMatch[0]); // 
+        }
+
+        // using replaceAll() method - replaces all occurrences of a pattern in a string with another string
+        const test4 = /and/ig;
+        const str4 = "Girls AND boys can be teachers. Books and biros. We write AnD we read aNd we dictate.";
+        const regExec = str4.replaceAll(test4, "bash");
+        console.log(regExec); // Girls bash boys can be teachers. Books bash biros. We write bash we read bash we dictate.
+
+
+        // using split() method - splits a string into an array of substrings based on a specified expression
+        const test5 = /\s+/ig;
+        const str5 = "Girls and boys can be teachers. Books and biros. We write and we read and we dictate.";
+        const splitRegExp = str5.split('and');
+        console.log(splitRegExp); // Girls ', ' boys can be teachers. Books ', ' biros. We write ', ' we read ', ' we dictate.
+    
+
+
+        // Using exec() method - searches for a pattern and returns an array containing details about the match
+        const test6 = /and/ig;
+        const str6 = "Girls AND boys can be teachers. Books and biros. We write AnD we read aNd we dictate..";
+        for (let i = 0; i < str6.length; i++) {
+            const execReg = test6.exec(str1);
+            if (execReg) {
+                console.log(`Found "${execReg[0]}" at index ${execReg.index}`);
+            } 
+        }
+
+    </script>
+</body>
+
+</html>
