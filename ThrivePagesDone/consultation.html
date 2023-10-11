@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consult Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .searchh {
+            text-align: center;
+            color: green;
+            margin-bottom: 2%;
+        }
+
+        #inputBox {
+            width: 180px;
+        }
+
+        .containn,
+        .containn2 {
+            width: 200px;
+        }
+
+        /* .pictures {
+            height: 50px;
+            width: 200px;
+            margin-right: 0%
+        } */
+
+        .names {
+            text-align: center;
+        }
+
+        .namesss {
+            text-align: center;
+            color: green;
+            margin-top: 5%;
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="container">
+
+    <header class="bg-green-800 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <img class="w-12 h-12" src="logooo.JPE" alt="Logo">
+            <div class="hidden md:flex space-x-4">
+                <a href="/" class="text-white">Home</a>
+                <a href="/" class="text-white">About</a>
+                <a href="/" class="text-white">Therapy</a>
+                <a href="/" class="text-white">Community</a>
+            </div>
+            <img class="lg:hidden md:hidden w-8 h-8 alig" src="./images/hamburger.png" alt="Hamburger Icon">
+        </div>
+    </header>
+
+<!-- Main Section -->
+<main class="container mx-auto p-4">
+    <h1 class="searchh text-2xl font-semibold">SEARCH DOCTORS, BOOK AN APPOINTMENT</h1>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <!-- Left Column (1/5 Width) -->
+        <div class="md:col-span-1 bg-white p-4 rounded-lg shadow">
+            <p class="searchh2 ">SEARCH</p>
+            <div class="w-2/3">
+                <input type="text" class="w-full p-1 mb-6 rounded-md border" id="inputBox" placeholder="Search...">
+            </div>
+            <p class="searchh3">DISTRICT/STATE</p>
+            <div class="w-2/3">
+                <input type="text" class="w-full p-1 mb-6 rounded-md border" id="inputBox" placeholder="Search...">
+            </div>
+
+            <div class="containn">
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <p class="searchh4">SPECIALTY</p>
+                    <div class="w-2/3">
+                        <input type="text" class="w-full p-1 mb-6 rounded-md border" id="inputBox"
+                            placeholder="Search...">
+                        <label class="inline-flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-brown-600">
+                            <span class="text-brown-800">Abuse</span>
+                        </label>
+                        <label class="inline-flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-brown-600">
+                            <span class="text-brown-800">Stress</span>
+                        </label>
+                        <label class="inline-flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-brown-600">
+                            <p>Trauma</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+<br><br>
+            <div class="containn2">
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <p class="searchh4">QUALIFICATION</p>
+                    <div class="w-2/3">
+                        <input type="text" class="w-full p-1 mb-6 rounded-md border" id="inputBox"
+                            placeholder="Search...">
+                        <label class="inline-flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-brown-600">
+                            <span class="text-brown-800">BSc(Health)</span>
+                        </label>
+                        <label class="inline-flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-brown-600">
+                            <span class="text-brown-800">BSc(Therapy)</span>
+                        </label>
+                        <label class="inline-flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-brown-600">
+                            <p>Bsc(psychology)</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="containn2 mt-8">
+                <div class="bg-green-200 p-4 rounded-lg">
+                    <p class="searchh4">QUALIFICATIONS</p>
+                    <div class="w-2/3">
+                        <input type="text" class="w-full p-1 mb-6 rounded-md border" id="inputBox" placeholder="Search...">
+                        <div class="bg-brown-500 p-4 rounded-lg">
+                            <label class="inline-flex items-center space-x-2">
+                                <input type="checkbox" class="form-checkbox">
+                                <p>Bsc(Health)</p>
+                            </label>
+                            <label class="inline-flex items-center space-x-2">
+                                <input type="checkbox" class="form-checkbox text-brown-600">
+                                <p>BSc(Therapy)</p>
+                            </label>
+                            <label class="inline-flex items-center space-x-2">
+                                <input type="checkbox" class="form-checkbox text-brown-600">
+                                <p>Bsc(psychology)</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+        </div>
+
+        <!-- Right Column (4/5 Width) -->
+
+
+
+
+        
+        <div class="flex justify-between md:col-span-4 bg-white p-4 shadow">
+            <div class="grid grid-cols-4 gap-1">
+                <!-- Row 1 -->
+                <div class="md:col-span-4 bg-white p-4 shadow flex flex-wrap justify-center gap-4">
+                    <div class="bg-green-50 p-6 rounded-lg border border-green-400 flex flex-col items-center">
+                        <div class="rounded-full h-32 w-32 border-4 border-green-500 overflow-hidden">
+                            <img class="object-cover h-full w-full" src="doctorr.JPEG" alt="Doctor Image">
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="text-green-500 font-semibold">Adeleke Ti-Jesu</p>
+                            <p class="text-green-500">Senior Therapist</p>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="md:col-span-4 bg-white p-4 shadow flex flex-wrap justify-center gap-4">
+                    <div class="bg-green-50 p-6 border border-green-400 flex flex-col items-center">
+                        <div class="rounded-full h-32 w-32 border-4 border-green-500 overflow-hidden">
+                            <img class="object-cover h-full w-full" src="doctor3.JPEG" alt="Doctor Image">
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="text-green-500 font-semibold">Adeleke Ti-Jesu</p>
+                            <p class="text-green-500">Senior Therapist</p>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="md:col-span-4 bg-white p-4 shadow flex flex-wrap justify-center gap-4">
+                    <div class="bg-green-50 p-6 border border-green-400 flex flex-col items-center">
+                        <div class="rounded-full h-32 w-32 border-4 border-green-500 overflow-hidden">
+                            <img class="object-cover h-full w-full" src="doctorr.JPEG" alt="Doctor Image">
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="text-green-500 font-semibold">Adeleke Ti-Jesu</p>
+                            <p class="text-green-500">Senior Therapist</p>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class=" col-span-1 bg-green-50 p-6">
+                    <img class="object-cover object-center w-4/6 m-auto" alt="image111" src="portImage2-modified.png">
+                    <p class = "names">Adeleke Ti-Jesu</p>
+                    <p class = "names">Senior Therapist</p>                
+                </div>
+                </div>
+
+                <div class="flex">
+                    <!-- Image 1 -->
+                    <div class="flex">
+                        <!-- Image 1 -->
+                        <div class="flex-shrink-0 bg-green-50 p-6">
+                          <img class="object-cover object-center rounded w-1/3 m-auto" alt="image111" src="portImage2-modified.png">
+                          <p class="names">Adeleke Ti-Jesu</p>
+                          <p class="names">Senior Therapist</p>
+                        </div>
+                      
+                        <!-- Image 2 -->
+                        <div class="flex-shrink-0 bg-green-50 p-4">
+                          <img class="object-cover object-center rounded w-1/3 m-auto" alt="image111" src="portImage2-modified.png">
+                          <p class="names">Adeleke Ti-Jesu</p>
+                          <p class="names">Senior Therapist</p>
+                        </div>
+                      
+                        <!-- Image 3 -->
+                        <div class="flex-shrink-0 bg-green-50 p-4">
+                          <img class="object-cover object-center rounded w-1/3 m-auto" alt="image111" src="portImage2-modified.png">
+                          <p class="names">Adeleke Ti-Jesu</p>
+                          <p class="names">Senior Therapist</p>
+                        </div>
+                      
+                        <!-- Image 4 -->
+                        <div class="flex-shrink-0 bg-green-50 p-4">
+                          <img class="object-cover object-center rounded w-1/3 m-auto" alt="image111" src="portImage2-modified.png">
+                          <p class="names">Adeleke Ti-Jesu</p>
+                          <p class="names">Senior Therapist</p>
+                        </div>
+                    </div>
+                  </div>
+                  
+
+                <!-- Row 3
+                <div class=" col-span-1 bg-green-50 p-4">
+                    <img class="object-cover object-center rounded w-4/6 m-auto" alt="image111" src="portImage2-modified.png">
+                    <p class = "names">Adeleke Ti-Jesu</p>
+                    <p class = "names">Senior Therapist</p>                
+                </div>
+                <div class="col-span-1 bg-green-50 p-4">
+                    <img class="object-cover object-center rounded w-4/6 m-auto" alt="image111" src="portImage2-modified.png">
+                    <p class = "names">Adeleke Ti-Jesu</p>
+                    <p class = "names">Senior Therapist</p>                
+                </div>
+                <div class="col-span-1 bg-green-50 p-4">
+                    <img class="object-cover object-center rounded w-4/6 m-auto" alt="image111" src="portImage2-modified.png">
+                    <p class = "names">Adeleke Ti-Jesu</p>
+                    <p class = "names">Senior Therapist</p>
+                </div>
+                <div class="col-span-1 bg-green-50 p-4">
+                    <img class="object-cover object-center rounded w-4/6 m-auto" alt="image111" src="portImage2-modified.png">
+                    <p class = "names">Adeleke Ti-Jesu</p>
+                    <p class = "names">Senior Therapist</p>                
+                </div> -->
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-green-800 p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="text-center">
+            <span class="text-2xl font-medium">Thrive</span>
+            <ul class="mt-2">
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <span class="text-xl font-medium">Social</span>
+            <ul class="mt-2">
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <span class="text-2xl font-medium">Services</span>
+            <ul class="mt-2">
+                <li>Resources</li>
+                <li>Relaxation</li>
+                <li>Therapy</li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <input class="p-1 rounded-l-sm" type="text" placeholder="Email Address">
+            <button class="rounded-r-sm bg-green-700 px-2 py-1 text-white font-medium">Subscribe</button>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <span class="text-sm font-medium">Copyright &copy; 2023 Thrive. All rights reserved.</span>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
