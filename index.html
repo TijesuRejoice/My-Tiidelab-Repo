@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultation Page</title>
+    <title>Payment Plans</title>
     <!-- Include Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#D4DDCC]">
 
 <!-- Header -->
 <header class="bg-[#4D732A] p-2 text-white">
@@ -24,193 +23,53 @@
 
         </div>
     </div>
-<style>
-    fontFamily: {
-        sans: ['Graphik', 'sans-serif'],
-        serif: ['Merriweather', 'serif']
-        headers: ['Crimson', 'sans-serif']
-        body_text: ['Montserrat']
-      }
-      </style>
 </header>
 
-<!-- Main Section -->
-<main class="container mx-auto p-4">
-    <h1 class="text-2xl font-semibold text-center text-[#295700] mb-4">SEARCH DOCTORS, BOOK AN APPOINTMENT</h1>
-    <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-        <!-- Left Column (1/5 Width) -->
-        <div class="md:col-span-1 bg-white p-4 shadow">
-            <!-- Search Bar -->
-            <p class="text-green-700 text-lg mb-2">SEARCH</p>
-            <input type="text" class="w-full p-1 mb-4 border" placeholder="Search...">
-            <p class="text-green-700 text-lg mb-2">DISTRICT/STATE</p>
-            <input type="text" class="w-full p-1 mb-4 border" placeholder="Select a State...">
-            <!-- Specialty -->
-            <div class="bg-[#D4DDCC] p-4 mt-4">
-                <p class="text-[#295700] text-lg mb-2">SPECIALTY</p>
-                <input type="text" class="w-full p-1 mb-4 border" placeholder="Search...">
-                <label class="inline-flex items-center space-x-2 text-[#295700]">
-                    <input type="checkbox" class="form-checkbox">
-                    <span>Physical Abuse</span>
-                </label>
-                <label class="inline-flex items-center space-x-2 text-[#295700]">
-                    <input type="checkbox" class="form-checkbox">
-                    <span>Mental Stress</span>
-                </label>
-                <label class="inline-flex items-center space-x-2 text-[#295700]">
-                    <input type="checkbox" class="form-checkbox">
-                    <span>One-on-One Therapy</span>
-                </label>
-                <label class="inline-flex items-center space-x-2 text-[#295700]">
-                    <input type="checkbox" class="form-checkbox">
-                    <span>Anxiety</span>
-                </label>
+
+<body class="bg-[#D4DDCC]">
+    <div class="container mx-auto">
+        <h1 class="text-2xl text-center text-[#295700] font-semibold mt-4 mb-4 text-align">Welcome to Thrive Premium Package Plan!</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Gold Plan Card -->
+            <div class="bg-white p-6 rounded shadow-md">
+                <h2 class="text-xl font-sans-serif mb-2">Gold Plan</h2>
+                <p class="text-gray-600 mb-4">With #30,000 a month, we welcome you to enjoy our highest premium package that offers you: <br><br>
+                   <strong>=> 10  freetherapy sessions <br>
+                    => Unlimited access to all relaxation features
+                   </strong></p>
+                <a href = "goldPayment.html"><button class="bg-[#FFD700] text-white px-4 py-2 rounded-full hover:bg-green-600 mr-4">Upgrade to Gold</button></a>
             </div>
 
-            <br><br>
-            <!-- Qualification -->
-            <div class="bg-[#D4DDCC] p-4 mt-4">
-                <p class="text-[#295700] text-lg mb-2">QUALIFICATION</p>
-                <input type="text" class="w-full p-1 mb-4 border" placeholder="Search...">
-                <label class="inline-flex items-center space-x-2 text-[#295700]">
-                    <input type="checkbox" class="form-checkbox">
-                    <span>MBBS (Health)</span>
-                </label>
-                <label class="inline-flex items-center space-x-2 text-[#295700]">
-                    <input type="checkbox" class="form-checkbox">
-                    <span>MBBS (Therapy)</span>
-                </label>
-                <label class="inline-flex items-center space-x-2 text-[#295700]">
-                    <input type="checkbox" class="form-checkbox">
-                    <span>MBBS (Psychology)</span>
-                </label>
-                <label class="inline-flex items-center space-x-2 text-[#295700]">
-                    <input type="checkbox" class="form-checkbox">
-                    <span>MBBS (Oncology)</span>
-                </label>
+            <!-- Silver Plan Card -->
+            <div class="bg-white p-6 rounded shadow-md">
+                <h2 class="text-xl font-semibold mb-2">Silver Plan</h2>
+                <p class="text-gray-600 mb-4">With #20,000 a month, we welcome you to enjoy our silver premium package that offers you: <br><br>
+                    <strong>=> 6 free therapy sessions <br>
+                     => Unlimited access to all relaxation features
+                    </strong></p>
+                <button class="bg-gray-500 text-white px-4 py-2 rounded-full hover:bg-green-600">Upgrade to Silver</button>
+            </div>
+
+            <!-- Bronze Plan Card -->
+            <div class="bg-white p-6 rounded shadow-md">
+                <h2 class="text-xl font-semibold mb-2">Bronze Plan</h2>
+                <p class="text-gray-600 mb-4">With #30,000 a month, we welcome you to enjoy our bronze premium package that offers you: <br><br>
+                    <strong>=> 2 free therapy sessions <br>
+                     => Unlimited access to all relaxation features
+                    </strong></p>
+                <button class="bg-[#CD7F32] text-white px-4 py-2 rounded-full hover:bg-green-600">Upgrade to Bronze</button>
             </div>
         </div>
-
-        <!-- Right Column (4/5 Width) -->
-        <div class="md:col-span-4 bg-white p-4 shadow">
-            <!-- Flex Container for Row 1 -->
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <!-- Row 1 - Column 1 -->
-                <div class="bg-[#D4DDCC] p-6 flex flex-col items-center">
-                    <div class="rounded-full h-32 w-32 border-4 border-[#295700] overflow-hidden">
-                        <img class="object-cover object-center rounded-full w-full h-full" alt="image111" src="https://res.cloudinary.com/deofacwik/image/upload/v1694602403/mannnn_rri14d.jpg">
-                    </div>
-                    <p class="text-[#295700] font-semibold mt-4">Favour Jigah</p>
-                    <p class="text-[#295700]">Psychiatrist</p>
-                </div>
-
-                <!-- Row 1 - Column 2 -->
-                <div class="bg-[#D4DDCC] p-6 flex flex-col items-center">
-                    <div class="rounded-full h-32 w-32 border-4 border-[#295700] overflow-hidden">
-                        <img class="object-cover object-center rounded-full w-full h-full" alt="image112" src="https://res.cloudinary.com/deofacwik/image/upload/v1694602403/mannn_nlgyuq.jpg">
-                    </div>
-                    <p class="text-[#295700] font-semibold mt-4">Musa Muhammed </p>
-                    <p class="text-[#295700]">Physiologist</p>
-                </div>
-
-                <!-- Row 1 - Column 3 -->
-                <div class="bg-[#D4DDCC] p-6 rounded-lg flex flex-col items-center">
-                    <div class="rounded-full h-32 w-32 border-4 border-[#295700] overflow-hidden">
-                        <img class="object-cover object-center rounded-full w-full h-full" alt="image113" src="https://res.cloudinary.com/deofacwik/image/upload/v1694602402/ladyyy_i1q0qa.jpg">
-                    </div>
-                    <p class="text-[#295700] font-semibold mt-4">Rahmat Popoola</p>
-                    <p class="text-[#295700]">Clinical Psychologist</p>
-                </div>
-
-                <!-- Row 1 - Column 4 -->
-                <div class="bg-[#D4DDCC] p-6 rounded-lg flex flex-col items-center">
-                    <div class="rounded-full h-32 w-32 border-4 border-[#295700] overflow-hidden">
-                        <img class="object-cover object-center rounded-full w-full h-full" alt="image114" src="https://res.cloudinary.com/deofacwik/image/upload/v1694602403/guy_tn2ypm.jpg">
-                    </div>
-                    <p class="text-[#295700] font-semibold mt-4">Muneef Alawode</p>
-                    <p class="text-[#295700]">Therapist</p>
-                </div>
-
-                <!-- Row 1 - Column 4 -->
-                <div class="bg-[#D4DDCC] p-6 rounded-lg flex flex-col items-center">
-                    <div class="rounded-full h-32 w-32 border-4 border-[#295700] overflow-hidden">
-                        <img class="object-cover object-center rounded-full w-full h-full" alt="image114" src="https://res.cloudinary.com/deofacwik/image/upload/v1694602402/girlss_bicpqx.jpg">
-                    </div>
-                    <p class="text-[#295700] font-semibold mt-4">Shomope Aisha</p>
-                    <p class="text-[#295700]">Senior Therapist</p>
-                </div>
-
-                <!-- Row 1 - Column 4 -->
-                <div class="bg-[#D4DDCC] p-6 rounded-lg flex flex-col items-center">
-                    <div class="rounded-full h-32 w-32 border-4 border-[#295700] overflow-hidden">
-                        <img class="object-cover object-center rounded-full w-full h-full" alt="image114" src="https://res.cloudinary.com/deofacwik/image/upload/v1694602402/doctor3_qsthef.jpg">
-                    </div>
-                    <p class="text-[#295700] font-semibold mt-4">Oladoja Rasheed</p>
-                    <p class="text-[#295700]">Volunteer Therapist</p>
-                </div>
-
-                <!-- Row 1 - Column 4 -->
-                <div class="bg-[#D4DDCC] p-6 rounded-lg flex flex-col items-center">
-                    <div class="rounded-full h-32 w-32 border-4 border-[#295700] overflow-hidden">
-                        <img class="object-cover object-center rounded-full w-full h-full" alt="image114" src="https://res.cloudinary.com/deofacwik/image/upload/v1694602402/doctoreLady_rwhfrk.jpg">
-                    </div>
-                    <p class="text-[#295700] font-semibold mt-4">Wajud Kareem</p>
-                    <p class="text-[#295700]">Mind Specialist</p>
-                </div>
-
-                <!-- Row 1 - Column 4 -->
-                <div class="bg-[#D4DDCC] p-6 rounded-lg flex flex-col items-center">
-                    <div class="rounded-full h-32 w-32 border-4 border-[#295700] overflow-hidden">
-                        <img class="object-cover object-center rounded-full w-full h-full" alt="image114" src="https://res.cloudinary.com/deofacwik/image/upload/v1694602402/doctorLady_nr9mz4.jpg">
-                    </div>
-                    <p class="text-[#295700] font-semibold mt-4">Chidimma Okoye</p>
-                    <p class="text-[#295700]">Clinical Psyiotherapist</p>
-                </div>
-
-                <!-- Row 1 - Column 4 -->
-                <div class="bg-[#D4DDCC] p-6 rounded-lg flex flex-col items-center">
-                    <div class="rounded-full h-32 w-32 border-4 border-[#295700] overflow-hidden">
-                        <img class="object-cover object-center rounded-full w-full h-full" alt="image114" src="https://res.cloudinary.com/deofacwik/image/upload/v1694602402/doctorr_xpxmkm.jpg">
-                    </div>
-                    <p class="text-[#295700] font-semibold mt-4">Agu Nkenna</p>
-                    <p class="text-[#295700]">Pharmacist</p>
-                </div>
-
-                <!-- Row 1 - Column 4 -->
-                <div class="bg-[#D4DDCC] p-6 rounded-lg flex flex-col items-center">
-                    <div class="rounded-full h-32 w-32 border-4 border-[#295700] overflow-hidden">
-                        <img class="object-cover object-center rounded-full w-full h-full" alt="image114" src="https://res.cloudinary.com/deofacwik/image/upload/v1694602402/man_nhczm5.jpg">
-                    </div>
-                    <p class="text-[#295700] font-semibold mt-4">Ahmad Qozeem</p>
-                    <p class="text-[#295700]">Oncologist</p>
-                </div>
-
-                <!-- Row 1 - Column 4 -->
-                <div class="bg-[#D4DDCC] p-6 rounded-lg flex flex-col items-center">
-                    <div class="rounded-full h-32 w-32 border-4 border-[#295700] overflow-hidden">
-                        <img class="object-cover object-center rounded-full w-full h-full" alt="image114" src="https://res.cloudinary.com/deofacwik/image/upload/v1694602402/girl_rderyh.jpg">
-                    </div>
-                    <p class="text-[#295700] font-semibold mt-4">Peace Sandy</p>
-                    <p class="text-[#295700]">Therapist</p>
-                </div>
-
-                <!-- Row 1 - Column 4 -->
-                <div class="bg-[#D4DDCC] p-6 rounded-lg flex flex-col items-center">
-                    <div class="rounded-full h-32 w-32 border-4 border-[#295700] overflow-hidden">
-                        <img class="object-cover object-center rounded-full w-full h-full" alt="image114" src="https://res.cloudinary.com/deofacwik/image/upload/v1694602402/doctorrLady_dgp3fp.jpg">
-                    </div>
-                    <p class="text-[#295700] font-semibold mt-4">Oluwaleke Salem</p>
-                    <p class="text-[#295700]">Therapist</p>
-                </div>
-            </div>
-        </div>
-
-
         
-    </div>
-</main>
 
-<!-- Footer -->
+    </div>
+<br>
+
+<div>
+    <button class="bg-blue-500 text-white px-4 py-2 mb-4 block mx-auto rounded-full hover:bg-green-600">One off Payment?</button>
+</div>
+    <div>
+    <!-- Footer -->
 <footer class="bg-[#4D732A] p-4 text-white">
     <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         <!-- About Us -->
@@ -252,9 +111,9 @@
     <div class="text-center mt-4">
         <span class="text-sm font-medium">Copyright &copy; 2023 Thrive. All rights reserved.</span>
     </div>
+</div>
 </footer>
 
-
 </body>
+</html>
 
-</html>        
